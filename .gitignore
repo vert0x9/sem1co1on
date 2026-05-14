@@ -1,2 +1,6 @@
-DS_store
+DS_Store
 .env
+public/
+.hugo_build.lock
+resources/_gen/
+*.zip
