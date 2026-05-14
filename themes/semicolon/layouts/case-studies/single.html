@@ -7,22 +7,22 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="{{ "/css/main.css" | absURL }}">
+<link rel="stylesheet" href="{{ "css/main.css" | relURL }}">
 </head>
 <body class="noise inner-page">
 
 <header id="header" class="scrolled">
   <div class="header-inner">
-    <a href="{{ "/" | absURL }}" class="logo">
+    <a href="{{ "" | relURL }}" class="logo">
       <div class="logo-name">sem<span class="g">1</span>co<span class="g">1</span>on</div>
       <span class="logo-sub">Performance Marketing</span>
     </a>
     <nav class="header-nav">
-      <a href="{{ absURL "" }}#services">Services</a>
-      <a href="{{ "/process/" | absURL }}">Process</a>
-      <a href="{{ "/case-studies/" | absURL }}">Work</a>
-      <a href="{{ absURL "" }}#founder">About</a>
-      <a href="{{ absURL "" }}#contact" class="btn-gold">Book a call</a>
+      <a href="{{ "" | relURL }}#services">Services</a>
+      <a href="{{ "process/" | relURL }}">Process</a>
+      <a href="{{ "case-studies/" | relURL }}">Work</a>
+      <a href="{{ "" | relURL }}#founder">About</a>
+      <a href="{{ "" | relURL }}#contact" class="btn-gold">Book a call</a>
     </nav>
   </div>
 </header>
@@ -32,7 +32,7 @@
   <!-- Case Study Hero -->
   <section class="cs-hero">
     <div class="cs-hero-inner">
-      <a href="{{ "/case-studies/" | absURL }}" class="back-link">&larr; All case studies</a>
+      <a href="{{ "case-studies/" | relURL }}" class="back-link">&larr; All case studies</a>
       <div class="cs-meta-row">
         <span class="eyebrow" style="color:var(--accent); margin-bottom:0;">{{ .Params.industry }}</span>
         <span class="cs-channel">{{ .Params.channel }}</span>
@@ -60,7 +60,7 @@
       <span class="eyebrow dim">Ready to see results like this?</span>
       <h2 class="cs-cta-h2">Get a free account audit.</h2>
       <p class="cs-cta-sub">We look at your numbers, tell you what&rsquo;s wrong, and show you what we&rsquo;d do about it. No pitch deck.</p>
-      <a href="{{ absURL "" }}#contact" class="btn-gold">Book a strategy call &rarr;</a>
+      <a href="{{ "" | relURL }}#contact" class="btn-gold">Book a strategy call &rarr;</a>
     </div>
   </section>
 
@@ -77,24 +77,24 @@
       <div>
         <span class="footer-col-h">Services</span>
         <div class="footer-links">
-          <a href="{{ absURL "" }}#services">Paid Media</a>
-          <a href="{{ absURL "" }}#services">Analytics</a>
-          <a href="{{ absURL "" }}#services">App Development</a>
+          <a href="{{ "" | relURL }}#services">Paid Media</a>
+          <a href="{{ "" | relURL }}#services">Analytics</a>
+          <a href="{{ "" | relURL }}#services">App Development</a>
         </div>
       </div>
       <div>
         <span class="footer-col-h">Company</span>
         <div class="footer-links">
-          <a href="{{ absURL "" }}#founder">About</a>
-          <a href="{{ "/case-studies/" | absURL }}">Work</a>
-          <a href="{{ "/process/" | absURL }}">Process</a>
+          <a href="{{ "" | relURL }}#founder">About</a>
+          <a href="{{ "case-studies/" | relURL }}">Work</a>
+          <a href="{{ "process/" | relURL }}">Process</a>
         </div>
       </div>
       <div>
         <span class="footer-col-h">Contact</span>
         <div class="footer-links">
           <a href="mailto:hello@sem1co1on.com">hello@sem1co1co1on.com</a>
-          <a href="{{ absURL "" }}#contact">Book a call</a>
+          <a href="{{ "" | relURL }}#contact">Book a call</a>
         </div>
       </div>
     </div>
