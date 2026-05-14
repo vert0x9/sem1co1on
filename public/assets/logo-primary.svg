@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 180" width="640" height="180">
+  <defs>
+    
+  </defs>
+  <rect width="640" height="180" fill="#F7F6F4"></rect>
+  
+  <text y="108" x="28">
+    <tspan class="wm">sem</tspan><tspan class="wm acc">1</tspan><tspan class="wm">co</tspan><tspan class="wm acc">1</tspan><tspan class="wm">on</tspan>
+  </text>
+  
+  <text x="30" y="138" class="sub">PERFORMANCE MARKETING</text>
+  
+  <text x="520" y="160" class="mark">;</text>
+</svg>
