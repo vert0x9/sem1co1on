@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Case Studies on sem1co1on — Performance Marketing Agency</title>
+    <link>http://localhost:1313/case-studies/</link>
+    <description>Recent content in Case Studies on sem1co1on — Performance Marketing Agency</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/case-studies/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>App Development: Two Products Built from Zero to App Store</title>
+      <link>http://localhost:1313/case-studies/app-development/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/case-studies/app-development/</guid>
+      <description>Managed the full product lifecycle for two iOS apps — from ideation and product strategy to development, App Store launch, and go-to-market. Both live. Both serving real users in the NYC construction industry.</description>
+    </item>
+    <item>
+      <title>B2B SaaS: 47% Lower CPL, 86% More MQLs on Google Ads</title>
+      <link>http://localhost:1313/case-studies/google-saas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/case-studies/google-saas/</guid>
+      <description>Removed 340 keywords bleeding $6k/month in wasted spend, rebuilt campaign structure from scratch, and fixed conversion tracking that was double-counting 40% of leads. Pipeline value 3.8× in one quarter.</description>
+    </item>
+    <item>
+      <title>Commercial Insurance: 239% More Leads, Same Budget</title>
+      <link>http://localhost:1313/case-studies/insurance-full-funnel/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/case-studies/insurance-full-funnel/</guid>
+      <description>Flipped the channel mix after the audit showed Meta CPL was 60% lower than Google. Rebuilt landing pages, cut form fields from 9 to 4, and built a 3-stage retargeting sequence. 18 leads/month became 61. Budget didn&amp;rsquo;t change.</description>
+    </item>
+    <item>
+      <title>D2C Apparel: 50% ROAS Lift on $100k Meta Spend</title>
+      <link>http://localhost:1313/case-studies/meta-ecommerce/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/case-studies/meta-ecommerce/</guid>
+      <description>Killed 67% of wasted ad sets, rebuilt audience segmentation from scratch, and introduced a UGC creative testing framework. Same $100k budget. 68% more revenue in 90 days.</description>
+    </item>
+  </channel>
+</rss>

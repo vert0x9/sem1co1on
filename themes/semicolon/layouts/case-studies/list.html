@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Case Studies — sem1co1on</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/main.css">
+</head>
+<body class="noise inner-page">
+
+<header id="header" class="scrolled">
+  <div class="header-inner">
+    <a href="/" class="logo">
+      <div class="logo-name">sem<span class="g">1</span>co<span class="g">1</span>on</div>
+      <span class="logo-sub">Performance Marketing</span>
+    </a>
+    <nav class="header-nav">
+      <a href="/#services">Services</a>
+      <a href="/process/">Process</a>
+      <a href="/case-studies/">Work</a>
+      <a href="/#founder">About</a>
+      <a href="/#contact" class="btn-gold">Book a call</a>
+    </nav>
+  </div>
+</header>
+
+<main class="inner-main">
+
+  <section class="list-hero">
+    <div class="list-hero-inner">
+      <span class="eyebrow" style="color:var(--accent);">Case studies</span>
+      <h1 class="list-h1">Real projects.<br><span class="g">Measurable</span> outcomes.</h1>
+      <p class="list-sub">We don&rsquo;t do vague percentages. Every case study below shows exactly what we did, what changed, and what the numbers looked like before and after.</p>
+    </div>
+  </section>
+
+  <section class="list-grid-section">
+    <div class="list-grid">
+      {{ range .Pages }}
+      <a href="{{ .Permalink }}" class="list-card">
+        <div class="list-card-meta">{{ .Params.industry }} &middot; {{ .Params.channel }}</div>
+        {{ with index .Params.kpis 0 }}
+        <div class="list-card-kpi">{{ .value }}</div>
+        <div class="list-card-kpi-label">{{ .label }}</div>
+        {{ end }}
+        <div class="list-card-title">{{ .Title }}</div>
+        <p class="list-card-body">{{ .Params.summary }}</p>
+        <div class="list-card-cta">Read case study &rarr;</div>
+      </a>
+      {{ end }}
+    </div>
+  </section>
+
+  <section class="cs-cta">
+    <div class="cs-cta-inner">
+      <span class="eyebrow dim">Ready?</span>
+      <h2 class="cs-cta-h2">Get a free account audit.</h2>
+      <p class="cs-cta-sub">We look at your numbers, tell you what&rsquo;s wrong, and show you what we&rsquo;d do about it.</p>
+      <a href="/#contact" class="btn-gold">Book a strategy call &rarr;</a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div>
+        <div class="footer-logo-name">sem<span class="g">1</span>co<span class="g">1</span>on</div>
+        <span class="footer-logo-sub">Performance Marketing</span>
+        <p class="footer-tagline">Real projects. Measurable outcomes.<br>Paid Media &middot; Analytics &middot; App Development</p>
+      </div>
+      <div>
+        <span class="footer-col-h">Services</span>
+        <div class="footer-links">
+          <a href="/#services">Paid Media</a>
+          <a href="/#services">Analytics</a>
+          <a href="/#services">App Development</a>
+        </div>
+      </div>
+      <div>
+        <span class="footer-col-h">Company</span>
+        <div class="footer-links">
+          <a href="/#founder">About</a>
+          <a href="/case-studies/">Work</a>
+          <a href="/process/">Process</a>
+        </div>
+      </div>
+      <div>
+        <span class="footer-col-h">Contact</span>
+        <div class="footer-links">
+          <a href="mailto:hello@sem1co1on.com">hello@sem1co1on.com</a>
+          <a href="/#contact">Book a call</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-copy">&copy; {{ now.Year }} sem1co1on. All rights reserved.</span>
+      <span class="footer-mark">;</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const hdr = document.getElementById('header');
+  window.addEventListener('scroll', () => {
+    hdr.classList.toggle('scrolled', window.scrollY > 32);
+  }, { passive: true });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{ .Title }} — sem1co1on</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/main.css">
+</head>
+<body class="noise inner-page">
+
+<header id="header" class="scrolled">
+  <div class="header-inner">
+    <a href="/" class="logo">
+      <div class="logo-name">sem<span class="g">1</span>co<span class="g">1</span>on</div>
+      <span class="logo-sub">Performance Marketing</span>
+    </a>
+    <nav class="header-nav">
+      <a href="/#services">Services</a>
+      <a href="/process/">Process</a>
+      <a href="/case-studies/">Work</a>
+      <a href="/#founder">About</a>
+      <a href="/#contact" class="btn-gold">Book a call</a>
+    </nav>
+  </div>
+</header>
+
+<main class="inner-main">
+
+  <!-- Case Study Hero -->
+  <section class="cs-hero">
+    <div class="cs-hero-inner">
+      <a href="/case-studies/" class="back-link">&larr; All case studies</a>
+      <div class="cs-meta-row">
+        <span class="eyebrow" style="color:var(--accent); margin-bottom:0;">{{ .Params.industry }}</span>
+        <span class="cs-channel">{{ .Params.channel }}</span>
+      </div>
+      <h1 class="cs-h1">{{ .Title }}</h1>
+      <div class="cs-hero-kpis">
+        {{ range .Params.kpis }}
+        <div class="cs-kpi">
+          <div class="cs-kpi-val">{{ .value }}</div>
+          <div class="cs-kpi-label">{{ .label }}</div>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+
+  <!-- Case Study Body -->
+  <div class="cs-body">
+    {{ .Content }}
+  </div>
+
+  <!-- CTA -->
+  <section class="cs-cta">
+    <div class="cs-cta-inner">
+      <span class="eyebrow dim">Ready to see results like this?</span>
+      <h2 class="cs-cta-h2">Get a free account audit.</h2>
+      <p class="cs-cta-sub">We look at your numbers, tell you what&rsquo;s wrong, and show you what we&rsquo;d do about it. No pitch deck.</p>
+      <a href="/#contact" class="btn-gold">Book a strategy call &rarr;</a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div>
+        <div class="footer-logo-name">sem<span class="g">1</span>co<span class="g">1</span>on</div>
+        <span class="footer-logo-sub">Performance Marketing</span>
+        <p class="footer-tagline">Real projects. Measurable outcomes.<br>Paid Media &middot; Analytics &middot; App Development</p>
+      </div>
+      <div>
+        <span class="footer-col-h">Services</span>
+        <div class="footer-links">
+          <a href="/#services">Paid Media</a>
+          <a href="/#services">Analytics</a>
+          <a href="/#services">App Development</a>
+        </div>
+      </div>
+      <div>
+        <span class="footer-col-h">Company</span>
+        <div class="footer-links">
+          <a href="/#founder">About</a>
+          <a href="/case-studies/">Work</a>
+          <a href="/process/">Process</a>
+        </div>
+      </div>
+      <div>
+        <span class="footer-col-h">Contact</span>
+        <div class="footer-links">
+          <a href="mailto:hello@sem1co1on.com">hello@sem1co1co1on.com</a>
+          <a href="/#contact">Book a call</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-copy">&copy; {{ now.Year }} sem1co1on. All rights reserved.</span>
+      <span class="footer-mark">;</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const hdr = document.getElementById('header');
+  window.addEventListener('scroll', () => {
+    hdr.classList.toggle('scrolled', window.scrollY > 32);
+  }, { passive: true });
+</script>
+
+</body>
+</html>

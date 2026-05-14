@@ -1,0 +1,9 @@
+baseURL = 'https://sem1co1on.com/'
+locale = 'en-us'
+title = 'sem1co1on — Performance Marketing Agency'
+theme = 'semicolon'
+
+[taxonomies]
+
+[markup.goldmark.renderer]
+  unsafe = true
