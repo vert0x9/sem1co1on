@@ -419,13 +419,6 @@ img, svg { display: block; }
   line-height: 1.35; color: var(--black); margin-bottom: 12px; flex: 1;
 }
 .result-body { font-size: 13px; line-height: 1.65; color: var(--gray-5); margin-bottom: 24px; }
-.result-tags { display: flex; gap: 6px; flex-wrap: wrap; margin-top: auto; }
-.result-tag {
-  font-size: 9px; font-weight: 700; letter-spacing: 0.1em;
-  text-transform: uppercase; color: var(--gray-4);
-  border: 1px solid var(--gray-2); padding: 3px 9px;
-}
-
 /* ────────────────── CONTACT ─────────────────── */
 #contact {
   background: var(--black); padding: 110px 48px;
