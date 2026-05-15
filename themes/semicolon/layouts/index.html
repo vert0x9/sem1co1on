@@ -33,7 +33,15 @@
   <div class="hero-grid-dots" aria-hidden="true"></div>
   <div class="hero-bg-mark" aria-hidden="true">;</div>
   <div class="hero-screenshot" aria-hidden="true">
-    <img src="{{ "assets/G5QahGIagAAjLV9.jpeg" | relURL }}" alt="">
+    <img src="{{ "assets/G5QahGIagAAjLV9.jpeg" | relURL }}" alt="" class="hero-slide hero-slide--active">
+    <video class="hero-slide" muted loop playsinline preload="none"
+      data-src-webm="{{ "assets/graph-hero.webm" | relURL }}"
+      data-src-mp4="{{ "assets/graph-hero.mp4" | relURL }}">
+    </video>
+    <div class="hero-dots">
+      <button class="hero-dot hero-dot--active" data-slide="0"></button>
+      <button class="hero-dot" data-slide="1"></button>
+    </div>
   </div>
   <div class="hero-content">
     <span class="eyebrow dim" data-reveal>Performance Marketing Agency &middot; New York</span>
@@ -443,6 +451,40 @@
     });
   }, { rootMargin: '-40% 0px -40% 0px' });
   sections.forEach(s => activeObs.observe(s));
+
+  (function heroCarousel() {
+    const wrap = document.querySelector('.hero-screenshot');
+    if (!wrap || getComputedStyle(wrap).display === 'none') return;
+    const img = wrap.querySelector('img');
+    const vid = wrap.querySelector('video');
+    if (!vid) return;
+    let videoLoaded = false;
+    function loadVideo() {
+      if (videoLoaded) return;
+      videoLoaded = true;
+      const webm = vid.dataset.srcWebm;
+      const mp4 = vid.dataset.srcMp4;
+      if (webm) { const s = document.createElement('source'); s.src = webm; s.type = 'video/webm'; vid.appendChild(s); }
+      if (mp4) { const s = document.createElement('source'); s.src = mp4; s.type = 'video/mp4'; vid.appendChild(s); }
+      vid.load();
+    }
+    const dots = document.querySelectorAll('.hero-dot');
+    let showingVideo = false;
+    function setSlide(toVideo) {
+      if (toVideo && !showingVideo) { loadVideo(); vid.play().catch(() => {}); }
+      showingVideo = toVideo;
+      img.classList.toggle('hero-slide--active', !showingVideo);
+      vid.classList.toggle('hero-slide--active', showingVideo);
+      dots.forEach((d, i) => d.classList.toggle('hero-dot--active', i === (showingVideo ? 1 : 0)));
+      if (!showingVideo) setTimeout(() => vid.pause(), 500);
+    }
+    dots.forEach(d => d.addEventListener('click', () => {
+      setSlide(d.dataset.slide === '1');
+      clearInterval(timer);
+      timer = setInterval(() => setSlide(!showingVideo), 6000);
+    }));
+    let timer = setInterval(() => setSlide(!showingVideo), 6000);
+  })();
 
   document.querySelector('.contact-form')?.addEventListener('submit', (e) => {
     const btn = e.target.querySelector('[type=submit]');
