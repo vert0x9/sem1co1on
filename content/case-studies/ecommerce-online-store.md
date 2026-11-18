@@ -1,5 +1,6 @@
 ---
 title: "Online Ecommerce Store: Monthly Digital Sales Up 108.7% After Engagement Start"
+weight: 1
 industry: "Photography Equipment · Ecommerce"
 channel: "Google Ads · Meta Ads · SEO"
 summary: "Average monthly Shopify digital sales rose from $88,418.30 before the engagement to $184,546.08 after we started — up 108.7% across two four-month periods."
