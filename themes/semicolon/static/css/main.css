@@ -318,7 +318,7 @@ img, svg { display: block; }
   font-size: 14px; line-height: 1.72;
   flex: 1; margin-bottom: 28px;
 }
-.svc.dark .svc-body { color: var(--gray-5); }
+.svc.dark .svc-body { color: var(--paper); }
 .svc:not(.dark) .svc-body { color: var(--gray-5); }
 .svc-tags { display: flex; gap: 6px; flex-wrap: wrap; margin-top: auto; }
 .svc-tag {
@@ -326,7 +326,7 @@ img, svg { display: block; }
   text-transform: uppercase; padding: 4px 10px;
 }
 .svc:not(.dark) .svc-tag { color: var(--gray-4); border: 1px solid var(--gray-2); }
-.svc.dark .svc-tag { color: var(--gray-6); border: 1px solid var(--gray-6); }
+.svc.dark .svc-tag { color: rgba(247,246,244,0.7); border: 1px solid rgba(247,246,244,0.25); }
 
 /* ────────────────── STATS ───────────────────── */
 #stats { background: var(--charcoal); padding: 80px 48px; }
