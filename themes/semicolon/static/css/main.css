@@ -349,7 +349,7 @@ img, svg { display: block; }
   font-size: 13px; font-weight: 600; color: var(--paper);
   margin-bottom: 4px; line-height: 1.35;
 }
-.stat-sub { font-size: 11px; color: var(--gray-5); }
+.stat-sub { font-size: 11px; color: var(--paper); }
 
 /* ────────────────── PROCESS ─────────────────── */
 #process { background: var(--cream); padding: 110px 48px; }
