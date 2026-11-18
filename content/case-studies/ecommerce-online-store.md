@@ -54,7 +54,7 @@ kpis:
 <p>Average monthly Shopify digital total sales were $88,418.30 in January–April 2026 and $184,546.08 in June–September 2026, an increase of 108.7%. May is excluded because work started during the month.</p>
 <div class="cs-result-kpis">
   <div class="cs-result-kpi">
-    <div class="cs-result-kpi-val">$88,418.30 → $184,546.08</div>
+    <div class="cs-result-kpi-val">$88k → $185k</div>
     <div class="cs-result-kpi-label">Average monthly digital total sales</div>
   </div>
   <div class="cs-result-kpi">
@@ -62,11 +62,11 @@ kpis:
     <div class="cs-result-kpi-label">Average monthly sales change</div>
   </div>
   <div class="cs-result-kpi">
-    <div class="cs-result-kpi-val">$353,673.18 → $738,184.31</div>
+    <div class="cs-result-kpi-val">$354k → $738k</div>
     <div class="cs-result-kpi-label">Four-month digital total sales</div>
   </div>
   <div class="cs-result-kpi">
-    <div class="cs-result-kpi-val">$212,328.37</div>
+    <div class="cs-result-kpi-val">$212k</div>
     <div class="cs-result-kpi-label">July 2026 digital total sales</div>
   </div>
 </div>
